@@ -342,3 +342,97 @@ img { max-width: 100%; display: block; }
     font-size: 16px;
     color: #bfbfc9;
 }
+
+
+
+
+/* --- Section Basics --- */
+.why-choose-section {
+    max-width: 1600px;
+    height: 1121px;
+    background-color: #230E3D;
+    padding: 80px 20px;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+/* --- The Grid Layout --- */
+.bento-grid {
+    display: grid;
+    /* Create 2 equal columns */
+    grid-template-columns: 1fr 1fr;
+    /* Define gap between cards */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Card Styling --- */
+.card {
+    background-color:rgba(53, 17, 101, 0.4); /* Dark Purple Card Bg */
+    border-radius: 30px;       /* Large rounded corners */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+/* Typography inside cards */
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.card p {
+    color: #a1a1aa;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Icon Styling */
+.icon-wrapper {
+    margin-bottom: 25px;
+    width: 50px;
+}
+
+.icon-wrapper img {
+    width: 100%;
+    display: block;
+}
+
+/* --- Grid Specifics (The Magic Part) --- */
+
+/* This targets the 1st card (Premium Audio) 
+   and makes it span 2 rows vertically.
+*/
+.card-tall {
+    grid-row: span 2; 
+    padding-top: 80px;
+}
+
+/* Mobile Responsiveness 
+   On screens smaller than 768px, switch to 1 column 
+*/
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .card-tall {
+        grid-row: span 1; 
+    }
+}
+
