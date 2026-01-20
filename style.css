@@ -653,3 +653,144 @@ img { max-width: 100%; display: block; }
     font-size: 0.8rem; 
     padding-top: 30px;
 }
+
+
+
+
+/* RESPONSIVE MEDIA QUERIES */
+
+/* Max Width: 992px)*/
+@media (max-width: 992px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    /* Fix Hero Font Sizes */
+    .hero-section h1 { font-size: 3.5rem; }
+    
+    /* Make Grids 2 Columns for Tablet */
+    .bento-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .stats-grid {
+        gap: 30px;
+    }
+    .episodes-grid {
+        grid-template-columns: 1fr 1fr; /* 2 cols */
+    }
+    
+    /* Adjust Host Section Layout */
+    .host-container {
+        flex-direction: column;
+        height: auto;
+        padding: 40px;
+    }
+    .host-img {
+        transform: scale(1); 
+        margin: 0 auto 30px auto;
+        width: 150px;
+        height: 150px;
+    }
+    .host-info {
+        text-align: center;
+    }
+    .host-info h3, .host-info p, .social-icons {
+        margin-left: 0; 
+    }
+    .social-icons ul {
+        padding-left: 0;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+/* Max Width: 576px*/
+@media (max-width: 576px) {
+    
+    /* 1. Navbar - Show Hamburger */
+    .nav-links, .desktop-btn { display: none; }
+    .hamburger { display: block; cursor: pointer; }
+    
+    /* 2. Hero Section - Stack Buttons */
+    .hero-section {
+        background-position: center top;
+        padding-top: 40px;
+    }
+    .hero-content {
+        height: auto;
+        padding-top: 20px;
+    }
+    .hero-section h1 {
+        font-size: 2.5rem; 
+        margin-top: 30px;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+    .btn-primary, .btn-outline {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* 3. About Section - 2x2 Stats Grid */
+    .about-section { height: auto; padding: 60px 0; }
+    .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px;
+        text-align: center;
+    }
+    .stat-item h3 { font-size: 2rem; }
+    .divider { margin: 40px 20px; }
+
+    /* 4. Why Choose - 1 Column */
+    .bento-grid {
+        grid-template-columns: 1fr; 
+    }
+    .card-tall { grid-row: span 1; padding-top: 30px;}
+
+    /* 5. Episodes - 1 Column */
+    .episodes-section { height: auto; }
+    .episodes-grid {
+        grid-template-columns: 1fr;
+    }
+    .episode-card {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    /* 6. Host Section*/
+    .host-container {
+        padding: 30px 20px;
+    }
+    .host-img-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .host-img {
+        width: 140px;
+        height: 140px;
+        margin: 0 0 20px 0; 
+        transform: none;
+    }
+    .host-info h3 { margin-left: 0; font-size: 1.5rem; }
+    .host-info p { margin-left: 0; font-size: 0.9rem; }
+    .social-icons { margin-left: 0; }
+    
+    /* 7. Footer Stack Links*/
+
+    .footer-links {
+        flex-direction: row;   
+        flex-wrap: wrap;     
+        justify-content: center;  
+        gap: 20px;         
+        padding-top: 20px;
+    }
+
+    .platform-link {
+        font-size: 1rem;
+    }
+}
