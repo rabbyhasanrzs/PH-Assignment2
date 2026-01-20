@@ -436,3 +436,138 @@ img { max-width: 100%; display: block; }
     }
 }
 
+
+
+/* --- Episodes Section --- */
+.episodes-section { 
+    
+    max-width: 1600px;
+    height: 1276px;
+    padding: 80px 0;
+    background-color:rgba(26, 11, 46, 1);
+}
+
+.episode-container{
+    padding: 120px 200px 120px 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertical */
+
+}
+.episodes-section h2 { 
+    text-align: center; 
+    margin-bottom: 40px; 
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.episodes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.episode-card {
+    background-color:rgba(37, 13, 68, 1);
+    max-width: 370px;
+    height: 470px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.video-placeholder {
+    height: 180px;
+    background: #2d1b4e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: rgba(255,255,255,0.2);
+}
+
+.card-content {padding:90px 0px 0px 25px; }
+
+.card-content h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-content p{
+    font-size: 16px;
+    color:#a1a1aa;
+}
+.meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: var(--accent-green);
+}
+.meta img { 
+    width: 20px; 
+    font-size: 16px;
+}
+
+/* --- Host Section (Challenge) --- */
+.host-section {
+    padding: 80px 0;
+}
+
+.host-section h2 { 
+    text-align: center; 
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.host-container {
+    background-color:rgba(37, 13, 68, 1);
+    padding: 0px 200px 120px 200px;
+    max-width: 1150px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.host-img {
+    width: 300%;
+    height: 300%;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: scale(1.8);
+    margin-left:55px;
+
+}
+
+.host-info h3 { 
+    font-size: 1.8rem; 
+    margin-bottom: 15px; 
+    margin-left:130px;
+}
+.host-info p { 
+    color:gray; 
+    margin-bottom: 20px; 
+    margin-left:130px;
+}
+.social-icons{
+    margin-left: 130px;
+}
+.social-icons li {
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(37, 13, 68, 1);
+    width: 40px;
+    height: 40px;
+    border: 1px solid white ;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
