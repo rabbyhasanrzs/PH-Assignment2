@@ -112,7 +112,7 @@ img { max-width: 100%; display: block; }
     background-repeat: no-repeat;
     text-align: center;
     padding: 60px 20px 100px;
-    border-top: 0.5px solid rgba(117, 62, 188, 0.4);
+    border-top: 1px solid rgba(146, 78, 198, 0.4);
     /* width: 1600px;
     height: 760px; */
 }
