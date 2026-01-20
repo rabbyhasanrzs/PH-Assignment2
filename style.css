@@ -761,6 +761,12 @@ img { max-width: 100%; display: block; }
         max-width: 100%;
     }
 
+
+    .why-choose-section {
+        height: auto !important; 
+        padding-bottom: 80px;    
+    }
+
     /* 6. Host Section*/
     .host-container {
         padding: 30px 20px;
