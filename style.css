@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body, html {
+    overflow-x: hidden; 
+    width: 100%;
+}
+
+body {
+    color:#ffffff;
+    line-height: 1.6;
+}
+
+
+/* 2. Make Sections Fluid instead of fixed 1600px */
+.navbar, 
+.hero-section, 
+.about-section, 
+.why-choose-section, 
+.episodes-section, 
+.footer {
+    width: 100%;          
+    max-width: 100%;      
+    height: auto;       
+    padding-left: 20px;  
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+/* 3. Fix Container Widths */
+.outer-content, .container, .episode-container, .host-container, .footer-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0; 
+}
+
+a { text-decoration: none;}
+ul { list-style: none; }
+img { max-width: 100%; display: block; }
+
+
+
+/* --- Navbar --- */
+.navbar {
+    width: 1600px;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 200px 0px 200px;
+    background-color:#1A0B2E;
+    position: relative;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.logo span {
+      background: linear-gradient(
+    90deg,
+    #FF6A88,
+    #FF2FCF,
+    #8A00FF
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color:#FFFFFF;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover { color:#ff2cc3; }
+
+.btn-gradient {
+    background: linear-gradient(135deg, #ffcc33, #ff2cc3, #6a00ff);
+    padding: 10px 20px;
+    border-radius: 25px;
+    color:#FFFFFF;
+    font-weight: 550;
+    font-size: 1rem;
+    transition: transform 0.2s;
+}
+
+.btn-gradient:hover { transform: scale(1.05); }
+
+/* Mobile Menu Hidden by default */
+.nav-toggle, .hamburger { display: none; }
