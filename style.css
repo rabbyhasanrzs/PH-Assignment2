@@ -296,3 +296,49 @@ img { max-width: 100%; display: block; }
 }
 
 .btn-outline:hover { background: rgba(255,255,255,0.1); }
+
+
+
+
+/* --- About Section --- */
+.about-section {
+    background-color: #1A0B2E;
+    max-width: 1600px;
+    height: 646px;
+    padding: 80px 0;
+    text-align: center;
+}
+.container h2{
+    font-size: 48px;
+    font-weight: bold;
+}
+.divider { 
+    height: 1.5px; 
+    background: rgba(255,255,255,0.1); 
+    margin: 80px 200px 80px 200px;
+    max-width: 100%;
+}
+.section-desc {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    color:#a1a1aa;
+    line-height: 30px;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.stat-item h3 {
+    font-size:48px;
+    color:#00FF88;
+    margin-bottom: 5px;
+    font-weight: 900;
+}
+
+.stat-item p{
+    font-size: 16px;
+    color: #bfbfc9;
+}
